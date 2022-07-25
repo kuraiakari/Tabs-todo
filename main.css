@@ -1,0 +1,53 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+}
+.wrap {
+    display: inline-block;
+}
+.tabs {
+    display: flex;
+    position: relative;
+}
+.tab {
+    color: #ea4c89;
+    opacity: 0.6;
+    padding: 8px 30px;
+    font-size: 24px;
+    border-bottom: 5px solid transparent
+}
+.tab:hover {
+    border-bottom: 5px solid rgba(234, 76, 137, 0.1);
+    background-color: rgba(234, 76, 137, 0.09);
+    color: black;
+    opacity: 1;
+}
+.tab:hover > .icon {
+    color: #ea4c89;
+}
+.tab.active {
+    color: black;
+    opacity: 1;
+}
+.tab.active .icon {
+    color: #ea4c89;
+}
+.line {
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 0;
+    width: 0px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #ea4c89;
+    transition: all ease-in 0.2s;
+}
+.textTab{
+    display: none;
+    max-width: 644px;
+}
+.textTab.active{
+    display: block;
+}
